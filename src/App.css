@@ -50,12 +50,14 @@ header {
   margin: 0;
   max-width: 100%;
   padding: 10px;
-  background: #000;
+  background: rgb(49, 49, 49);
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
   box-shadow: 0 0 15px #000;
 }
+
+
 
 .text-logo {
   color: #fff;
@@ -74,6 +76,10 @@ header {
   border-radius: 10px;
 }
 
+.logo-sm-white {
+  width: 100px;
+}
+
 article h3 {
   margin: 5px 0;
 }
@@ -82,21 +88,21 @@ article h3 {
   align-self: center;
   justify-self: end;
   display: grid;
-  grid-gap:10px;
+  grid-gap: 10px;
   grid-template-columns: 1fr;
 }
 
 .top-links a {
-  background: #e10205;
+  /* background: #e10205; */
   color: #fff;
   font-weight: 700;
   text-decoration: none;
   justify-self: end;
   font-size: 1.2em;
-  padding: 5px;
-  border-radius: 5px;
-  width: 185px;
-  text-align: center;
+  /* padding: 5px; */
+  /* border-radius: 5px; */
+  /* width: 185px; */
+  /* text-align: center; */
 }
 
 h1,
@@ -184,12 +190,16 @@ main {
   }
 
   header {
-    grid-template-columns: 1fr;
+    grid-template-columns: 125px 1fr;
     justify-items: center;
   }
 
+  .logo-sm {
+    align-self: center;
+  }
+
   .top-links {
-    justify-self: center;
+    justify-self: end;
   }
 
   .text-logo {
