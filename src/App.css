@@ -187,7 +187,6 @@ main {
 
   .header-grid {
     grid-template-columns: 100px 1fr;
-    justify-items: center;
   }
 
   .logo-sm-white {
