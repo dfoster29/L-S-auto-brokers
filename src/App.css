@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,5 +34,161 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  margin: 0;
+  max-width: 100%;
+  padding: 10px;
+  background: #000;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 0 15px #000;
+}
+
+.text-logo {
+  color: #fff;
+  align-self: center;
+  justify-self: start;
+  font-size: 4.5em;
+  margin: 0 0 0 10px;
+}
+
+.red {
+  color: #e10205;
+}
+
+.logo-sm {
+  width: 200px;
+  border-radius: 10px;
+}
+
+article h3 {
+  margin: 5px 0;
+}
+
+.top-links {
+  align-self: center;
+  justify-self: end;
+  display: grid;
+  grid-gap:10px;
+  grid-template-columns: 1fr;
+}
+
+.top-links a {
+  background: #e10205;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  justify-self: end;
+  font-size: 1.2em;
+  padding: 5px;
+  border-radius: 5px;
+  width: 185px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.car a {
+  background: #e10205;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 90px;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+}
+
+.logo-lg {
+  display: block;
+  margin: 10px auto 30px;
+}
+
+.available-cars {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 30px;
+}
+
+.car {
+  box-shadow: 0 0 10px #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+.car:hover {
+  box-shadow: 0 10px 20px #ccc;
+}
+
+.car-image {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.car-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.thumbnail {
+  display: block;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1020px) {
+  .available-cars {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .available-cars {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .top-links {
+    justify-self: center;
   }
 }
