@@ -191,4 +191,8 @@ main {
   .top-links {
     justify-self: center;
   }
+
+  .text-logo {
+    display: none;
+  }
 }
