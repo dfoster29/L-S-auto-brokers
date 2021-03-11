@@ -51,20 +51,16 @@ header {
   max-width: 100%;
   padding: 10px;
   background: rgb(49, 49, 49);
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 1fr 1fr;
   box-shadow: 0 0 15px #000;
 }
 
-
-
-.text-logo {
-  color: #fff;
-  align-self: center;
-  justify-self: start;
-  font-size: 4.5em;
-  margin: 0 0 0 10px;
+.header-grid {
+  max-width: 100%;
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .red {
@@ -189,12 +185,13 @@ main {
     padding: 0;
   }
 
-  header {
-    grid-template-columns: 125px 1fr;
+  .header-grid {
+    grid-template-columns: 100px 1fr;
     justify-items: center;
   }
 
-  .logo-sm {
+  .logo-sm-white {
+    margin-top: 5px;
     align-self: center;
   }
 
