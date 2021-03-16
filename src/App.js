@@ -1,7 +1,10 @@
-import logo from './Images/logo.jpeg';
-import smLogoWhite from './Images/L&S_White_500px.png';
 import './App.css';
-import Header from './Components/Header.js';
+import Home from './Components/Home';
+import Header from './Components/Header';
+import Car from './Components/Car';
+import DemoCarousel from './Components/DemoCarousel';
+<link rel="stylesheet" href="<NODE_MODULES_FOLDER>/react-responsive-carousel/lib/styles/carousel.min.css" />
+
 
 function App() {
   return (
@@ -10,10 +13,12 @@ function App() {
 
       <main>
 
+        <Home></Home>
 
-        <img src={logo} className="logo-lg" alt="logo" />
+        <Car></Car>
 
       </main>
+
 
     </div>
   );
