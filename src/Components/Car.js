@@ -7,12 +7,6 @@ import civicFive from '../Images/04-Civic/IMG_9161.jpg'
 import civicSix from '../Images/04-Civic/IMG_9162.jpg'
 import civicSeven from '../Images/04-Civic/IMG_9163.jpg'
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
