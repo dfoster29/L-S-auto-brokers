@@ -164,6 +164,8 @@ ul {
   .logo-sm-white {
     margin-top: 5px;
     align-self: center;
+    justify-self: start;
+    margin-left: -5px;
   }
 
   .top-links {
