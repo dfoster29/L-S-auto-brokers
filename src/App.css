@@ -151,6 +151,28 @@ ul {
   }
 } */
 
+.sold-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.car-sold {
+  font-size: 50px;
+  font-weight: 700;
+  background-color: red;
+  position: absolute;
+  top: 40%;
+  left: -20%;
+  transform: rotate(-20deg);
+  padding: .5% 10%;
+  color: #fff;
+  width:120%;
+  text-align: center;
+box-shadow: 0 0 15px #000;
+}
+
+
+
 @media screen and (max-width: 650px) {
   .available-cars {
     grid-template-columns: 1fr;
@@ -177,5 +199,9 @@ ul {
 
   .car-model {
     font-size: 1.5em;
+  }
+
+  .car-sold {
+    font-size: 35px;
   }
 }

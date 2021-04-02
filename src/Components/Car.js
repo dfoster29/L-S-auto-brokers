@@ -19,7 +19,8 @@ function Car() {
       <section class="available-cars">
         <article className="car">
         <h3 class="car-model">2004 Honda Civic EX Coupe</h3>
-          <Carousel>
+        <div className="sold-wrapper">
+        <Carousel>
             <div>
               <img src={civicOne} alt="" />
 
@@ -50,6 +51,9 @@ function Car() {
             </div>
 
           </Carousel>
+          <p className="car-sold">SOLD!</p>
+        </div>
+          
           
           <h3 class="green-text">$3,450</h3>
           <p><strong>Mileage:</strong> 132,100</p>
